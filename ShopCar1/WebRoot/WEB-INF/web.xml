@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+		<servlet-name>BuyServlet</servlet-name>
+		<servlet-class>com.web.controller.BuyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyServlet</servlet-name>
+		<url-pattern>/BuyServlet</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>ChangeQuantitySevlet</servlet-name>
+		<servlet-class>com.web.controller.ChangeQuantityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeQuantitySevlet</servlet-name>
+		<url-pattern>/ChangeQuantitySevlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ClearCartServlet</servlet-name>
+		<servlet-class>com.web.controller.ClearCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClearCartServlet</servlet-name>
+		<url-pattern>/ClearCartServlet</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>DeleteItemServlet</servlet-name>
+		<servlet-class>com.web.controller.DeleteItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteItemServlet</servlet-name>
+		<url-pattern>/DeleteItemServlet</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>ListBookServlet</servlet-name>
+		<servlet-class>com.web.controller.ListBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListBookServlet</servlet-name>
+		<url-pattern>/ListBookServlet</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>ListCartServlet</servlet-name>
+		<servlet-class>com.web.controller.ListCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCartServlet</servlet-name>
+		<url-pattern>/ListCartServlet</url-pattern>
+	</servlet-mapping> 
+	
+
+</web-app>
