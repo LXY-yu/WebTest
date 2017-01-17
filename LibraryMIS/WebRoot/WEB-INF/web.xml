@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_findServlet</servlet-name>
+    <servlet-class>com.servlet.R_findServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_HandleServlet</servlet-name>
+    <servlet-class>com.servlet.R_HandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.R_UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_DeleteServlet</servlet-name>
+    <servlet-class>com.servlet.R_DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_reHandleServlet</servlet-name>
+    <servlet-class>com.servlet.R_reHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>B_AddBookServlet</servlet-name>
+    <servlet-class>com.servlet.B_AddBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>B_findServlet</servlet-name>
+    <servlet-class>com.servlet.B_findServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>B_UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.B_UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_checkReaderServlet</servlet-name>
+    <servlet-class>com.servlet.R_checkReaderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>R_AlterPwdServlet</servlet-name>
+    <servlet-class>com.servlet.R_AlterPwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_BorrowServlet</servlet-name>
+    <servlet-class>com.servlet.L_BorrowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_findServlet</servlet-name>
+    <servlet-class>com.servlet.L_findServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_LendServlet</servlet-name>
+    <servlet-class>com.servlet.L_LendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_reBorrowServlet</servlet-name>
+    <servlet-class>com.servlet.L_reBorrowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_reLendServlet</servlet-name>
+    <servlet-class>com.servlet.L_reLendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>L_returnServlet</servlet-name>
+    <servlet-class>com.servlet.L_returnServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>R_findServlet</servlet-name>
+    <url-pattern>/R_findServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_HandleServlet</servlet-name>
+    <url-pattern>/R_HandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_UpdateServlet</servlet-name>
+    <url-pattern>/R_UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_DeleteServlet</servlet-name>
+    <url-pattern>/R_DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_reHandleServlet</servlet-name>
+    <url-pattern>/R_reHandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>B_AddBookServlet</servlet-name>
+    <url-pattern>/B_AddBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>B_findServlet</servlet-name>
+    <url-pattern>/B_findServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>B_UpdateServlet</servlet-name>
+    <url-pattern>/B_UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_checkReaderServlet</servlet-name>
+    <url-pattern>/R_checkReaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>R_AlterPwdServlet</servlet-name>
+    <url-pattern>/R_AlterPwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_BorrowServlet</servlet-name>
+    <url-pattern>/L_BorrowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_findServlet</servlet-name>
+    <url-pattern>/L_findServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_LendServlet</servlet-name>
+    <url-pattern>/L_LendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_reBorrowServlet</servlet-name>
+    <url-pattern>/L_reBorrowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_reLendServlet</servlet-name>
+    <url-pattern>/L_reLendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>L_returnServlet</servlet-name>
+    <url-pattern>/L_returnServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
