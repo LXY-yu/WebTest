@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2009-2012 the original author or authors. Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Message">
+
+	<resultMap type="com.bean.message" id="MessageResult">
+		<id column="ID" jdbcType="INTEGER" property="id" />
+		<result column="COMMAND" jdbcType="VARCHAR" property="command" />
+		<result column="DISCRIPTION" jdbcType="VARCHAR" property="discription" />
+		<result column="CONTENT" jdbcType="VARCHAR" property="content" />
+	</resultMap>
+
+	<select id="find" parameterType="com.bean.message" resultMap="MessageResult">
+		select * from message where 1=1
+		<if test="command !=null and !&quot;&quot;.equals(command.trim())">
+		and COMMAND=#{command}
+		</if>
+		<if test="discription !=null and !&quot;&quot;.equals(discription.trim())">
+		and DISCRIPTION like '%${discription}%'
+		</if>
+	</select>
+	
+	<select id="FindForUpdate" parameterType="int" resultMap="MessageResult">
+		select * from message where ID=#{_parameter}
+	</select>
+	
+	<delete id="deleteOne" parameterType="int">
+	delete from message where ID=#{_parameter}
+	</delete>
+	<delete id="deleteBatch" parameterType="java.util.List">
+	delete from message where ID in (
+	<foreach collection ="list" item="item" separator=",">
+	#{item}
+	</foreach> 
+	)
+	</delete>
+	
+	<update id="update" parameterType="com.bean.message">
+	update message set COMMAND=#{command},DISCRIPTION=#{discription},CONTENT=#{content} where ID=#{id}
+	</update>
+	
+	<insert id="add" parameterType="com.bean.message">
+	insert into message(COMMAND,DISCRIPTION,CONTENT) values(#{command},#{discription},#{content})
+	</insert>
+
+
+</mapper>
