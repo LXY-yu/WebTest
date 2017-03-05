@@ -28,10 +28,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</tr>
 																
 								<tr>									
-									<td><input name="commandT" type="text" ></td>
-									<td><input name="discriptionT" type="text"></td>
+									<td><input name="commandT" type="text" value="${command }" ></td>
+									<td><input name="discriptionT" type="text" value="${discription }"></td>
 									<td><input name="content" type="text"></td>
 									<td>
+									<input type="hidden" name="id" value="${id }"/>
 									<input type="submit" value="保存">
 									</td>
 								</tr>

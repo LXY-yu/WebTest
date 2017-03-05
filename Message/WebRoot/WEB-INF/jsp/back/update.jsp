@@ -28,17 +28,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								    <th>指令回复</th>
 								    <th>操作</th>
 								</tr>
-								<c:forEach items="${list}" var="message" varStatus="status">
+								<c:forEach items="${list}" var="command" >
+								<c:forEach items="${command.contentList}" var="commandContent" varStatus="status">
 								
 								<tr <c:if test="${status.index % 2!=0}">style='background-color:#ECF6EE;'</c:if>>									
-									<td><input name="commandT" type="text" value="${message.command}"></td>
-									<td><input name="discriptionT" type="text" value="${message.discription}"></td>
-									<td><input name="content" type="text" value="${message.content}"></td>
+									<td><input name="commandT" type="text" value="${command.name}"></td>
+									<td><input name="discriptionT" type="text" value="${command.discription}"></td>
 									<td>
-									<input name="id" type="hidden" value="${message.id}">
+									<input name="content" type="text" value="${commandContent.content}">
+									</td>
+									<td>
+									<input name="id1" type="hidden" value="${command.id}">
+									<input name="id2" type="hidden" value="${commandContent.id}">
 									<input type="submit" value="保存">
 									</td>
 								</tr>
+								</c:forEach>
 								</c:forEach>	
 							</tbody>
 						</table>

@@ -3,8 +3,10 @@ package com.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bean.message;
-import com.dao.MeaasgeDao;
+import com.bean.Command;
+import com.bean.CommandContent;
+import com.dao.CommandDao;
+
 
 /*
  * 与维护相关的业务
@@ -16,53 +18,66 @@ public class MaintainService {
 	 */
 	public void deleteOne(String id){
 		if(id !=null && !"".equals(id.trim())){
-			MeaasgeDao dm=new MeaasgeDao();
-			dm.deleteOne(Integer.valueOf(id));
+			CommandDao cd=new CommandDao();
+			cd.deleteOne(Integer.valueOf(id));
 		}
 				
 	}
 	
 	/*
-	 * 单条删除
+	 * 多条删除
 	 */
 	public void deleteBatch(String[] ids){
-			MeaasgeDao dm=new MeaasgeDao();
+		CommandDao cd=new CommandDao();
 			List<Integer> idList=new ArrayList<Integer>();
 			for(String id:ids){
 				idList.add(Integer.valueOf(id));
 			}
-			dm.deleteBatch(idList);
+			cd.deleteBatch(idList);
 	}
 	
 	/*
 	 * 查找for修改
 	 */
-	public List<message> findForUpdate(String id){
+	public List<Command> findForUpdate(String id){
 		
-			List<message> list=new ArrayList<message>();
-			MeaasgeDao dm=new MeaasgeDao();
-			list=dm.findForUpdate(Integer.valueOf(id));
+			List<Command> list=new ArrayList<Command>();
+			CommandDao cd=new CommandDao();
+			list=cd.findForUpdate(Integer.valueOf(id));
 			return list;		
 	}
 	
-	public void update(String id,String command,String discription,String content){
-		message m=new message();
-		m.setId(Integer.valueOf(id));
-		m.setCommand(command);
-		m.setContent(content);
-		m.setDiscription(discription);
-		MeaasgeDao dm=new MeaasgeDao();
-		dm.update(m);
+	public void update(String id1,String id2,String command,String discription,String content){
+		Command c=new Command();
+		c.setId(id1);
+		c.setName(command);
+		c.setDiscription(discription);
+		
+		CommandContent cc=new CommandContent();
+		cc.setId(id2);
+		cc.setContent(content);
+		
+		CommandDao cm=new CommandDao();
+		cm.updateCommand(c);
+		cm.updateCommandContent(cc);
 }
 	
-	public void add(String command,String discription,String content){
-		message m=new message();
+	public void add(String id,String command,String discription,String content){
+		if(id!=null){
+		CommandContent cc=new CommandContent();
+		cc.setCommandId(id);
+		cc.setContent(content);
 		
-		m.setCommand(command);
-		m.setContent(content);
-		m.setDiscription(discription);
-		MeaasgeDao dm=new MeaasgeDao();
-		dm.add(m);
+		CommandDao cm=new CommandDao();
+		cm.addContent(cc);
+		}else{
+			Command c=new Command();
+			c.setName(command);
+			c.setDiscription(discription);
+			
+			CommandDao cm=new CommandDao();
+			cm.add(c, content);
+		}
 }
 	/*public static void main(String[] args){
 		List<message> list=new ArrayList<message>();

@@ -19,5 +19,23 @@
 		<result column="COMMAND_ID" jdbcType="VARCHAR" property="commandId" />
 	</resultMap>
 
+    <update id="updateCommandContent" parameterType="com.bean.CommandContent">
+	update COMMAND_content set CONTENT=#{content} where ID=#{id}
+	</update>
 	
+	<insert id="addCommandContent" parameterType="com.bean.CommandContent" >
+	insert into COMMAND_content(CONTENT,COMMAND_ID) values(#{content},#{commandId})
+	</insert>
+	
+	<delete id="deleteOne" parameterType="int">
+	delete from COMMAND_content where COMMAND_ID=#{_parameter}
+	</delete>
+	
+	<delete id="deleteBatch" parameterType="java.util.List">
+	delete from COMMAND_content where COMMAND_ID in (
+	<foreach collection ="list" item="item" separator=",">
+	#{item}
+	</foreach> 
+	)
+	</delete>
 </mapper>

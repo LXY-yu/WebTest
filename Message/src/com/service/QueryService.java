@@ -5,18 +5,20 @@ import java.util.Random;
 
 import com.bean.Command;
 import com.bean.CommandContent;
-import com.bean.message;
 import com.dao.CommandDao;
-import com.dao.MeaasgeDao;
 import com.util.Iconst;
 
 /**
  * 查询相关的业务功能
  */
 public class QueryService {
-	public List<message> queryMessageList(String command,String description) {
+	/*public List<message> queryMessageList(String command,String description) {
 		MeaasgeDao messageDao = new MeaasgeDao();
 		return messageDao.find(command, description);
+	}*/
+	public List<Command> queryMessageList(String command,String description) {
+		CommandDao commandDao = new CommandDao();
+		return commandDao.queryCommandList(command, description);
 	}
 	
 	/**

@@ -18,11 +18,12 @@ public class AddServlet extends HttpServlet {
 		//设置编码
 				request.setCharacterEncoding("utf-8");
 				//接收页面传递额值
+				String id=request.getParameter("id");
 				String command=request.getParameter("commandT");
 				String discription=request.getParameter("discriptionT");
 				String content=request.getParameter("content");
 				MaintainService ms=new MaintainService();
-				ms.add(command, discription, content);
+				ms.add(id,command, discription, content);
 				//页面跳转
 				request.getRequestDispatcher("/ListServlet").forward(request,response);
 		

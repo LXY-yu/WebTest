@@ -46,16 +46,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								    <th>描述</th>
 								    <th>操作</th>
 								</tr>
-								<c:forEach items="${list}" var="message" varStatus="status">
+								<c:forEach items="${list}" var="command" varStatus="status">
 								
 								<tr <c:if test="${status.index % 2!=0}">style='background-color:#ECF6EE;'</c:if>>
-									<td><input type="checkbox" name="id" value="${message.id }"/></td>
+									<td><input type="checkbox" name="id" value="${command.id }"/></td>
 									<td>${status.index+1}</td>
-									<td>${message.command}</td>
-									<td>${message.discription}</td>
+									<td>${command.name}</td>
+									<td>${command.discription}</td>
 									<td>
-										<a href="${pageContext.request.contextPath }/UpdateServlet?id=${message.id}">修改</a>&nbsp;&nbsp;&nbsp;
-										<a href="${pageContext.request.contextPath }/DeleteOneServlet?id=${message.id}">删除</a>
+										<a href="${pageContext.request.contextPath }/UpdateServlet?id=${command.id}">修改</a>&nbsp;&nbsp;&nbsp;
+										<a href="${pageContext.request.contextPath }/DeleteOneServlet?id=${command.id}">删除</a>&nbsp;&nbsp;&nbsp;
+										<a href="${pageContext.request.contextPath }/ToAddServlet?id=${command.id}&command=${command.name}&discription=${command.discription}">新增</a>
 									</td>
 								</tr>
 								</c:forEach>	

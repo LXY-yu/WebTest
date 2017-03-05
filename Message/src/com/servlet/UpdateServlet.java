@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bean.message;
+import com.bean.Command;
 import com.service.MaintainService;
 
 public class UpdateServlet extends HttpServlet {
@@ -23,7 +23,7 @@ public class UpdateServlet extends HttpServlet {
 				//接收页面传递额值
 				String id=request.getParameter("id");
 				MaintainService ms=new MaintainService();
-				List<message> list=new ArrayList<message>();
+				List<Command> list=new ArrayList<Command>();
 				list=ms.findForUpdate(id);
 				
 				request.setAttribute("list", list);

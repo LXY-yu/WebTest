@@ -49,7 +49,6 @@
 
 
   <mappers>
-    <mapper resource="com/config/Message.xml"/>
     <mapper resource="com/config/Command.xml"/>
     <mapper resource="com/config/CommandContent.xml"/>
   </mappers>

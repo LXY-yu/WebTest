@@ -10,17 +10,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bean.message;
-import com.dao.MeaasgeDao;
-import com.service.ListService;
+import com.bean.Command;
+import com.service.QueryService;
 
 
 public class ListServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		ListService ls=new ListService();
-		List<message> list=new ArrayList<message>();
+		//ListService ls=new ListService();
+		//List<message> list=new ArrayList<message>();
+		QueryService qs=new QueryService();
+		List<Command> list=new ArrayList<Command>();
 		//设置编码
 		request.setCharacterEncoding("utf-8");
 		//接收页面传递额值
@@ -41,7 +42,8 @@ public class ListServlet extends HttpServlet {
 		}*/
 		
 		//查询消息列表
-		list=ls.find(command,discription);
+		//list=ls.find(command,discription);
+		list=qs.queryMessageList(command, discription);
 		//向页面传值
 		request.setAttribute("command", command);
 		request.setAttribute("discription", discription);

@@ -13,6 +13,13 @@ public class ToAddServlet extends HttpServlet {
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String id=request.getParameter("id");
+		String command=request.getParameter("command");
+		String discription=request.getParameter("discription");
+		
+		request.setAttribute("id", id);
+		request.setAttribute("command", command);
+		request.setAttribute("discription", discription);
 
 		request.getRequestDispatcher("/WEB-INF/jsp/back/add.jsp").forward(request,response);
 	}
