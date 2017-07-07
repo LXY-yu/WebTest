@@ -1,0 +1,83 @@
+@charset "utf-8";
+.wrap{width:983px; margin-left:auto; margin-right:auto; margin-top:0px; overflow:hidden;}
+.purchaseStep{ width:983px; height:92px; margin:10px 0; background: url(../Images/scareBuying-982,91.gif) no-repeat}
+
+ 
+.buyingEpiboly{ width:980px;height:315px;}
+.none390{ width:980px; height:132px; padding:20px; margin:0 auto; text-align:center;}
+.buyingEpiboly .buyingLeft{ width:343px;height:315px;float:left;}
+.buyingLeft  ul li{ width:343px; height:104px; display:block;}
+.buyingLeft .selectNone,
+.buyingLeft .select,
+.buyingLeft  .selectNoneLast{ background:url(../images/BG/purchasebg.png) no-repeat;}/*--共用同一张背景end--*/
+.buyingLeft  .selectNone{ background-position:0 0}
+.buyingLeft  .select{ background-position:0 -129px}
+.buyingLeft  .selectNoneLast{ background-position:0 -256px}
+/*--位置背景定位end--*/
+.selectNone:hover{ background-position:0 -129px}
+.selectNoneLast:hover{ background-position:0 -129px}
+/*--经过背景定位end--*/
+.selectNone img,
+.select img,
+.selectNoneLast img{ margin-left:13px; margin-top:13px;float:left; border:1px solid #ccc;}
+.selectNone p,.select p, .selectNoneLast p{ width:202px;margin-left:113px; margin-bottom:6px; overflow:hidden}
+.selectNone .tickName, 
+.select .tickName, 
+.selectNoneLast tickName{ width:110px; overflow:hidden; display:block; float:left}
+.selectNone p .sellOut,
+.select  p .sellOut{ margin-left:20px;}
+.selectNoneLast p .sellOut{ margin-left:53px;}
+/*--上部分左边end--*/
+.buyingEpiboly .buyingRight{ width:609px; margin-left:8px; height:315px; float:left;}
+.buyingRight .west img{ width:312px; height:312px; display:block; float:left; border:1px solid #CCC;}
+.buyingRight .east{width:280px;height:300px;float:right}
+.buyingRight .east .timeSkill{ width:170px; height:80px; margin-top:26px; background:url(../images/BG/purchaseTimebg.gif) no-repeat;float:left}
+.buyingRight .east .timeSkill img{display:block} 
+.timeSkill .timeNum{ margin-left:3px; letter-spacing:11px;_letter-spacing:13px; margin-top:-2px;*margin-top:0px;_margin-top:0px;_margin-left:3px;float:left}
+.buyingRight .east .timeSkill .time-zone{ margin-left:5px;*margin-left:7px;_margin-left:3px;}
+.tomNotice .timeSkill .two{ margin-left:0px;*margin-left:3px;_margin-left:3px;}
+/*--上部分右边end--*/
+
+
+/*=====下部分start====*/
+.buyingPredict{width:980px;}
+.buyingPredict .tomNotice .tom,
+.tomNotice .after{ height:31px; background:url(../Images/purchase983,86.gif) no-repeat; text-indent:-9999px}
+.tomNotice .after{ background-position:0 -55px;}
+.tomNotice ul { width:895px; height:328px; padding:15px 42px; overflow:hidden}
+.tomNotice ul li{ width:268px; height:324px;border:1px solid #dcdcdc; float:left; display:block}
+.tomNotice .time{ width:170px; height:36px; line-height:26px;padding-top:0 !important; margin:8px 0 0 10px; background:url(../images/BG/purchaseTimebg.gif) no-repeat;}
+.timeSkill .sec-img{ width:75px; height:74px; display:block}
+.tomNotice .timeNum{ margin-left:3px; margin-top:-2px !important; letter-spacing:11px !important;float:left; font-size:20px; color:#fff;}
+.tomNotice .three{padding-right:-2px !important; padding-left:7px;  }
+
+.Name{width:100%; clear:both; font-size:24px; font-family:"微软雅黑", "宋体"; text-shadow:2px 2px 3px rgba(50, 50, 50, 0.3);}
+.backwards{ width:164px; font-size:12px;}
+.buyBTN{ width:148px; height:46px; display:block; background:url(../images/button/BuyBtn.gif) no-repeat;}
+.buyBTN:hover{ background-position:-152px 0;}
+.saleEndBtn{ width:148px; height:46px; display:block; background:url(../images/button/saleEndBtn.gif) no-repeat;}
+.saleEndBtn:hover{ background-position:-152px 0;}
+.ml31{ margin-left:31px;}
+
+/*======title=========*/
+.h2tomorrowActives{width:193px; height:35px; background:url(../images/h2tomorrowActives.png) no-repeat;}/*---明天预告--*/
+.h2nextActives{width:193px; height:35px; background:url(../images/h2nextActives.png) no-repeat;}/*---明天预告--*/
+.productionName{height:36px;text-shadow:2px 2px 3px rgba(50, 50, 50, 0.3);}
+.tomNotice p{ line-height:18px; color:#808080;}
+.tomNotice a{ color:#000;}
+.tomNotice a:hover{ color:#0056a5;}
+/*=========知识问答=========*/
+.Knowledge{}
+.Knowledge .KnowledgeTltle{ width:970px; height:36px;}
+.Knowledge .KnowledgeTltle .KnowledgeTltleTl{width:5px; height:36px; background:url(../images/BG/knowBG.gif) no-repeat; background-position:0px 0px; float:left}
+.Knowledge .KnowledgeTltle .KnowledgeTltleTc{ width:950px;height:36px;background:url(../images/BG/knowBG.gif) repeat-x;background-position:0px -36px; float:left;}
+.Knowledge .KnowledgeTltle .KnowledgeTltleTr{width:5px;height:36px; background:url(../images/BG/knowBG.gif) no-repeat;background-position:-5px 0px; float:left;}
+.h2konw{width:193px; height:35px; background:url(../images/h2Know.png) no-repeat; margin-left:20px; text-indent:-999px;}
+.KnowledgeMain{width:958px; border:1px solid #c3985a; border-top:none;}
+.KnowledgeMain .KnowledgeTable{ width:100%;}
+.KnowledgeMain .KnowledgeTable a{ color:#085fb0;}
+.KnowledgeMain .KnowledgeTable th{ height:34px; font-size:14px; line-height:34px; background:url(../images/BG/knowTHBG.gif) repeat-x; text-align:center; font-weight:bold; color:#625545;}
+.KnowledgeMain .KnowledgeTable td{ line-height:33px; padding:0 10px;}
+.KnowledgeMain .KnowledgeTable .lise{ background-image:url(../images/bullet_go.png) left no-repeat ; padding-left:30px;}
+.KnowledgeMain .KnowledgeTable .time{ text-align:center; color:#808080;}
+.trBGgray{background-color:#f3f3f3;}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HCproject"
+  id="myeclipse.1494836279715"
+  context-root="/HCproject"
+  j2ee-spec="5.0"
+  archive="HCproject.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

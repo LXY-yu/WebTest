@@ -1,0 +1,65 @@
+﻿@import url(base.css);
+
+/*
+-------------------------------
+Site:        电子通宝卡平台 商家详情
+Author:      kim
+Updated:     2011-04-27
+Updated by:
+-------------------------------
+*/
+
+/*路径*/
+.pathContainer{ width:960px; height:37px; margin:0px auto; background:url(../images/zqf_PathBar.png) no-repeat; overflow:hidden; color:#fff; line-height:35px;  font-size:14px; font-weight:bold;}
+.pathContainer span{ float:left;}
+.pathContainer span.on{ width:110px; height:35px; margin-left:20px; margin-top:5px; line-height:30px; text-align:center; color:#e26a00; background:url(../images/BG/pathContainerOn.gif) no-repeat bottom;}
+.pathContainer span a{ color:#FFF}
+.pathContainer span a:hover{ text-decoration:underline;}
+.pathContainer em{ height:35px; width:30px; display:block; background:url(../images/zqf_pathArrow.gif) no-repeat center; overflow:hidden; float:left;}
+
+
+.storeLeft{ height:auto; width:700px; display:block; overflow:hidden; float:left;}
+.storeRight{ height:auto; width:246px; display:block; overflow:hidden; float:right;}
+
+
+/*商家信息*/
+.storeinfo{ height:auto; width:100%; overflow:hidden}
+.storeLogo{ width:80px; height:auto; overflow:hidden; float:left;}
+.storeLogo img{ border:1px solid #949494; float:left;}
+.storeLogo span{ width:5px; height:9px; display:block; background:url(../images/zqf_grayArrow.gif); margin-top:32px; float:left; overflow:hidden;}
+
+.storeName{width:600px; height:74px; overflow:hidden; float:right; position: relative;}
+.storeNameText{ height:40px; line-height:40px; display:block; font-size:22px; font-weight:bold; font-family:Verdana, Geneva, sans-serif; overflow:hidden;}
+.sroreNameLine {height:0px; width:100%; overflow:hidden; border-bottom:1px dashed #d6d6d6;}
+.sroreNameLineIco{ height:9px; width:16px; background:url(../images/iconScissors.png) no-repeat; background-position:0 -30px; position:absolute; right:20px; top:36px;}
+.storeAddress{ height:34px; line-height:34px; display:block; font-family:Verdana, Geneva, sans-serif; color:#6c6c6c;overflow:hidden;}
+
+/*商家图片*/
+.storeImages{ width:100%; height:348px; margin-top:10px;}
+.storeBigImages{ width:570px; height:348px; float:left;}
+.storeSmallImages{ width:129px; height:348px; display:block; float:right;}
+.storeSmallImages li{ height:115px; overflow:hidden;margin-bottom:1px;}
+.h2Store{width:193px; height:35px; background:url(../images/zqf_storeTitle.png) no-repeat;}
+
+/*商家优惠券列表*/
+.storeCouponInfo{ width:650px; height:auto; margin:15px auto; display:block; overflow:hidden;}
+.storeCouponImg{ height:122px; width:122px;padding:3px; display:block; overflow:hidden; text-align:center; border:1px solid #c8c8c8; float:left;}
+.storeCouponText{ height:auto; width:380px; margin-left:10px; float:left; line-height:26px;}
+.storeCouponText .couponTitle{color:#b05c00; font-weight:bold; font-size:18px; font-family:Verdana, Geneva, sans-serif; }
+.storeCouponText a{color:#1181d7}
+.storeCouponText a:hover{ text-decoration:underline;}
+.storeDown{ height:auto; width:122px; display:block; overflow:hidden; float:left;}
+.storeDown .storeDownBtn1 a{ height:31px; width:122px; display:block; background:url(../images/button/zqf_btnDownload.png) no-repeat;}
+.storeDown .storeDownBtn1 a:hover{ height:31px; width:122px; display:block; background:url(../images/button/zqf_btnDownload.png) no-repeat; background-position:-122px 0;}
+.storeDown .storeDownBtn2 a{ height:31px; width:122px; display:block; background:url(../images/button/zqf_btnDownload.png) no-repeat; background-position:0 -42px;}
+.storeDown .storeDownBtn2 a:hover{ height:31px; width:122px; display:block; background:url(../images/button/zqf_btnDownload.png) no-repeat; background-position:-122px -42px;}
+.storeCouponListLine{ height:5px; position:relative;}
+.storeCouponListLine span{ display:block; height:0px; overflow:hidden; border-bottom:1px dashed #d6d6d6; }
+.storeCouponListLine em{height:9px; width:16px; display:block; background:url(../images/iconScissors.png) no-repeat; background-position:0 -30px; position:absolute; right:20px; top:-4px; z-index:0;}
+
+/*右边样式*/
+.storeTab_on{ height:29px; width:123px; background:url(../images/zqf_storeTab.gif) no-repeat; float:left; color:#cc1300; font-weight:bold; line-height:29px; text-align:center;}
+.storeTab_off{ height:29px; width:123px; background:url(../images/zqf_storeTab.gif) no-repeat; background-position:0 -29px; float:left; color:#cc1300;  line-height:29px; text-align:center;}
+.storeTabContent{ display:block; width:244px; height:auto; border-bottom:1px solid #e7e7e7;  border-left:1px solid #e7e7e7;border-right:1px solid #e7e7e7; background:#fff9e3; line-height:22px;}
+.storeTabContent span{ height:auto; width:206px;  margin:0px auto; display:block; padding:15px 0px;}
+.storeTitle{ width:246px; height:31px; background: url(../images/zqf_storeTitleBar.gif) no-repeat; line-height:31px; text-indent:20px; font-weight:bold;}

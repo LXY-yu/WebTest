@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>AdLoginServlet</servlet-name>
+    <servlet-class>com.xt.servlet.AdLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.xt.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>qdLoginServlet</servlet-name>
+    <servlet-class>com.xt.servlet.qdLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QdRegServlet</servlet-name>
+    <servlet-class>com.xt.servlet.QdRegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserManaServlet</servlet-name>
+    <servlet-class>com.xt.servlet.UserManaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProManaServlet</servlet-name>
+    <servlet-class>com.xt.servlet.ProManaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GglanManaServlet</servlet-name>
+    <servlet-class>com.xt.servlet.GglanManaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QdProManaServlet</servlet-name>
+    <servlet-class>com.xt.servlet.QdProManaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BackServlet</servlet-name>
+    <servlet-class>com.by.servlet.BackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyServlet</servlet-name>
+    <servlet-class>com.by.servlet.BuyServlet</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>UpdateUserInfoServlet</servlet-name>
+    <servlet-class>com.xt.servlet.UpdateUserInfoServlet</servlet-class>
+  </servlet>
+
+
+
+
+  
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AdLoginServlet</servlet-name>
+    <url-pattern>/AdLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>qdLoginServlet</servlet-name>
+    <url-pattern>/qdLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QdRegServlet</servlet-name>
+    <url-pattern>/QdRegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserManaServlet</servlet-name>
+    <url-pattern>/UserManaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProManaServlet</servlet-name>
+    <url-pattern>/ProManaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GglanManaServlet</servlet-name>
+    <url-pattern>/GglanManaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QdProManaServlet</servlet-name>
+    <url-pattern>/QdProManaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackServlet</servlet-name>
+    <url-pattern>/BackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyServlet</servlet-name>
+    <url-pattern>/BuyServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>UpdateUserInfoServlet</servlet-name>
+    <url-pattern>/UpdateUserInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

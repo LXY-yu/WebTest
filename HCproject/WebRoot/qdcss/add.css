@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+-------------------------------
+Site:        江门移动商盟-弹出层
+Author:      fengailing
+Updated:     2011-04-29d
+Updated by:
+-------------------------------
+*/
+.fal-window-add{ width:702px; height:301px;margin:100px auto; font-size:12px;color:#333}
+.fal-windowBody{ width:650px; height:auto;padding:20px 30px 10px 20px;_padding:20px 30px 10px 20px; border-left:1px solid #ff7902; border-right:1px solid #ff7902; background:#fff}
+
+.fal-windowTop,
+.fal-windowFoot{ background:url(../images/beadPop.gif) no-repeat; }
+.fal-windowFoot{ height:3px; background-position:0 -36px}
+.fal-windowTop { height:30px;  line-height:30px;}
+
+.fal-windowTop h2{ color:#a22600; font-size:14px; font-weight:bold;margin-left:15px; }
+.fal-windowTop h2 a{ width:19px; height:28px;margin-right:12px;*margin-top:-35px; float:right; background:url(../images/closed.gif) no-repeat 0 10px; display:block}
+.fal-windowTop h2 a:hover{background:url(../images/closedOn.gif) no-repeat 0 10px;}
+
+/*========评分须知 start=======*/
+.marKnow{ width:640px; margin:0 auto; padding:5px; background:#FFF8DD; color:#666}
+.marKnow p{ margin-left:10px;line-height:20px; height:20px;}
+.orderDetail-box{ margin-bottom:10px; _margin-top:-1px; border:1px solid #f4ba80; border-top-width:2px; border-bottom-width:2px; font-size:12px;}
+/*========评分须知 start=======*/
+
+.orderDetail-head{height:31px; margin-top:10px; background:url(../images/orderDetailHhead.gif) no-repeat; line-height:31px;font-family:Tahoma, Arial, "宋体";}
+.orderDetail-head h2{width:140px;  padding-left:40px; float:left;font-size:15px; font-weight:bold; color:#fff;}
+.orderDetail-head .totalPrice{float:right; font-weight:bold; color:#f4030e; font-size:13px;}
+
+	/*------详情头部 end-----*/
+
+
+/*========商户评分 start=======*/
+.scoreBusiness ul{margin:20px 25px 0px; padding:0; color:#666}
+.scoreBusiness ul li{ margin-bottom:10px;height:30px;line-height:25px; list-style-type:none;}
+.scoreBusiness ul li strong{float:left;}
+.scoreBusiness ul li a{ margin:0 0 0 10px; float:left;}
+.scoreBusiness ul li a img{margin:0 3px 0 0;}
+.scoreBusiness ul li .scoreText{width:320px; float:right;}
+/*========商户评分 end=======*/
+
+/*========评分按钮 start=======*/
+.btnEvaluation{width:70px; height:30px; margin:0 auto; display:block;  font-weight:bold; background:url(../images/button/btnYellow70-2.gif) no-repeat; color:#fff; text-align:center; line-height:30px; font-size:14px;}
+.btnEvaluation:hover{background-position:0 -40px;}
+/*========评分按钮 end=======*/
+
+/*===========手机绑定=======*/
+.phone{ margin:25px auto 10px auto;}
+.phone th{ padding:10px 0px; text-align:right;  color:#333}
+.phone td{ padding:10px 0px; text-align:left; text-indent:15px;}
+.phoneInput{  width:400px; height:24px; line-height:24px; padding:0 10px; border:1px solid #b4b4b4;}
+.phone a{ color:#}
+.phone .phoneNum{ margin:0px 0 0px 20px; *margin-left:0;color:#09C; text-align:-10px;}
+.phone .phoneNum:hover{ text-decoration:underline}
+.btnDiv{ width:180px; height:30px; margin:0 auto;}
+.btnDiv2{ width:70px; height:30px; margin:0 auto;}
+.btnGray{width:70px; height:30px;float:left; margin:0 0 0 40px; display:inline-block;  font-weight:bold; background:url(../images/button/btnGray70-2.gif) no-repeat; color:#fff; text-align:center; line-height:30px; font-size:14px;}
+.btnGray:hover{background-position:0 -40px;}
+.btnsure{width:70px; height:30px;float:left; margin:0; display:inline-block;  font-weight:bold; background:url(../images/button/btnYellow70-2.gif) no-repeat; color:#fff; text-align:center; line-height:30px; font-size:14px;}
+.btnsure{background-position:0 -40px;}
+
+
+.phoneSuccess{ margin:25px auto 10px auto; text-align:center;}
+.phoneSuccess th{ vertical-align:middle; text-align:right; }
+.phoneSuccess td{text-align:left; line-height:22px; font-size:16px; font-family:"微软雅黑", "宋体";}
+
+.inputText{ width:615px; height:44px; margin:10px; border:1px solid #ccc; padding:5px; line-height:22px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>滑动效果类</title>
+
+<script>
+/*           div滑动效果(使用一个div实现不间断滑动,滑动期间可以改变div的内容)
+*
+* 代码制作:我又改名了            版本:1.0
+* E-mail:anymore1988@163.com     QQ:245671363
+* 此代码可以复制或更改,但请保留此信息,
+* 如果您在此基础上实现了更为强大的效果请将代码发一份到我的E-mail,本人由为感谢.
+* 日期:2010-5-12 18:09
+* 备注:好久没写东西了,这次刚好要用到,网上老半天都没找到合适的,
+* coda-slider-2.0效果不错,但使用不方便,所以自己写了个.嘿嘿
+*/
+//---------------------定义div滑动类----------------start-----
+    mySlider.name = null;
+    function mySlider() {
+   
+        mySlider.name = this;
+        this.divid = arguments[0]; //第一个参数：被操作div的id
+        this.sparent = document.getElementById(arguments[1]); //第二个参数：被操作div的父div的id
+        this.width = arguments[2]; //第三个参数：div的宽度
+        this.height = arguments[3]; //第四个参数：div的高度
+        this.step = arguments[4]; //第五个参数：希望动作分解为几步完成
+        this.timer = 10 * arguments[5]; //第六个参数：每个动作的间隔时间，10ms为一个单位
+
+        this.intervalid = null; //循环定时的id
+        this.div1 = document.getElementById(this.divid).cloneNode(true);
+        this.div2 = document.getElementById(this.divid).cloneNode(true);
+
+        this.initParent(); //初始化父容器
+        this.init(); //初始化被操作div
+        this.addcontainer();//将div添加到父容器
+       
+        return this;
+    }
+    mySlider.prototype.cycle = function()
+    {
+            //向下移动div2
+            var opx2 = this.div2.style.marginTop.split("px")[0];
+            var pxstep2 = Math.round((this.height / Math.round(this.step * 0.5)) + 0.5);
+            var npx2 = Number(opx2) + Number(pxstep2);
+           
+            //向下移动div1,
+            var opx = this.div1.style.marginTop.split("px")[0];
+            var npx = Number(opx) + Number(pxstep2);
+            if (npx > 0) { this.div1.style.marginTop = '0px'; } else { this.div1.style.marginTop = String(npx) + 'px'; }
+            if (npx > 0)
+            {
+                this.div2.style.display = "none";
+                this.div2 = this.div1.cloneNode(true);
+                window.clearInterval(this.intervalid);
+            }
+    }
+    mySlider.prototype.next = function() { //向下滚动
+        test();//测试用的函数,根据需要自己改动
+        this.updatediv(); //更新div
+        this.init(); //初始化被操作div
+        this.addcontainer(); //将div添加到父容器
+        this.intervalid = window.setInterval("mySlider.name.cycle()", this.timer); //设置动作循环
+    }
+    mySlider.prototype.initParent = function() {
+        //获取操作div的父容器
+        this.sparent.style.overflow = "hidden"; //设置父容器overflow
+        this.sparent.style.width = Number(this.width) + 'px';
+        this.sparent.style.height = Number(this.height) + 'px';
+    }
+    mySlider.prototype.init = function()
+    { //初始化
+            this.div1.style.width = Number(this.width) + 'px'; //设置目标div的宽度
+            this.div1.style.height = Number(this.height) + 'px'; //设置目标div的高度
+            this.div1.style.position = ""; //设置目标div的定位方式
+            this.div1.style.display = ""; //设置目标div的显示方式
+            this.div1.style.overflow = "hidden"; //设置overflow
+            this.div1.style.marginTop = "-" + this.height + "px";
+
+            this.div2.style.width = Number(this.width) + 'px'; //设置目标div的宽度
+            this.div2.style.height = Number(this.height) + 'px'; //设置目标div的高度
+            this.div2.style.position = ""; //设置目标div的定位方式
+            this.div2.style.display = ''; //设置目标div的显示方式
+            this.div2.style.overflow = "hidden"; //设置overflow
+      }
+      mySlider.prototype.updatediv = function()
+      {
+          this.div1 = document.getElementById(this.divid).cloneNode(true);
+      }
+      mySlider.prototype.addcontainer = function()
+      {
+          while (this.sparent.hasChildNodes()) this.sparent.removeChild(this.sparent.lastChild);
+          this.sparent.appendChild(this.div1);
+          this.sparent.appendChild(this.div2);
+      }
+      //-----------------------end------------------------
+
+   //以下为测试需要使用到的数据
+   var cou=0;
+      function test() {
+          var div = document.getElementById("dataContainer1");
+         // if (div.style.backgroundColor == 'red')
+          //    div.style.backgroundColor = 'blue';
+         // else div.style.backgroundColor = 'red';
+    div.innerHTML="这里是div的内容.<br/>这里是div的内容.<br/>这里是div的内容.< br/>这里是div的内容.<br/>这里是div的内容.<br/><b>div的内容在改变哦, 第"+cou+"次</b><br/>这里是div的内容.<br/>这里是div的内容.<br/> 这里是div的内容.<br/>这里是div的内容.<br/>";
+    cou++;
+      }
+   
+</script>
+</head>
+<body>
+
+<table id='titlebar' width='100%' height='10%' border=1>
+        <tr height=100>
+            <td id='menubar' height='4%' align=center colspan='2'>div滑动效果</td>
+        </tr>
+    </table>
+    <table id='bodybar' width='100%' height='90%' border=1>
+        <tr>
+            <td id='leftbar'>
+     <table >
+     
+      <tr><td ><a href=# onclick='topslider.next()'>点击这里看效果</a></td></tr>
+     </table>
+    </td>
+            <td id='databar' width='80%' valign=top>
+            <div id='Div1' >
+        
+    </div>
+    </td>
+        </tr>
+    </table>
+   
+<div id='dataContainer1' style="display:none;" >
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+这里是div的内容.<br/>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+   //开始实例化对象.注意请在紧挨</body>标签之前实例化,在其它地方实例化可能会出错.
+     var topslider = new mySlider('dataContainer1',"Div1", 500,300, 30, 2);//参数表示的意思在前面定义时有解释
+
+</script>
+</body>
+</html>

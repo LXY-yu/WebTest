@@ -1,0 +1,257 @@
+@import url(base.css);
+
+/*
+-------------------------------
+Site:        电子通宝卡平台 首页
+Author:      xumiaoyun liangminying
+Updated:     2011-03-28
+Updated by:
+-------------------------------
+*/
+
+.indH99{height:99px;}
+.indH130{height:130px;}
+.indH180{height:180px;}
+.indH99 li,.indH130 li{width:196px;}
+.indH130 li{height:22px;}
+/*========左侧品牌列表========*/
+.brandList{width:190px; height:245px; float:left;display:inline;  overflow:hidden; zoom:1; border-right:1px solid #ccc;}
+.brandList li{width:95px; height:36px; padding:2px 0; float:left; display:inline; overflow:hidden; border-bottom:1px solid #ccc; text-align:center;}
+
+/*========左侧品牌列表 end========*/
+
+
+/*========团购========*/
+.tuan{height:208px;overflow:hidden;}
+.tuan .tuanImg{width:225px; height:175px; padding:2px; margin:15px 8px 15px 15px; display:inline;float:left; border:1px solid #ccc;}
+.tuan  h3{width:465px;margin:20px 0 8px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:24px; font-family:"微软雅黑";}
+.tuan .info{width:465px;margin:0 0 8px; height:50px; background:#fff8c4;}
+.tuan p{width:460px; padding-left:5px;overflow:hidden; color:#666; line-height:25px;}
+.tuan  .price{margin:10px 0 0 10px;float:left; display:inline;color:#ec2100;font-size:26px; font-family:"微软雅黑";}
+.tuan .btnRob{width:126px; height:34px; margin:8px; display:block;display:inline; float:right; overflow:hidden; background:url(../images/btnRob.png) no-repeat; text-indent:-9999em;}
+.tuan .btnRob:hover{background-position:-133px 0;}
+/*========团购 end========*/
+
+
+/*========热门优惠券列表========*/
+.hotList{width:763px; display:inline; float:left;}
+.hotList ul{margin:7px 0 0 3px; overflow:hidden; zoom:1;}
+.hotList li{width:230px;  height:50px; padding:7px 5px 7px 6px; margin:6px 4px; float:left; position:relative; border:1px dashed #999; line-height:16px;}
+.hotList .liImg{width:55px; height:45px; margin-right:7px; padding:1px; overflow:hidden; float:left; border:1px solid #9e9e9e; background:#fff;}
+.hotList h3{width:160px; margin:2px 0 3px 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:14px; font-weight:100;}
+.hotList h3 a{color:#0056a5;}
+.hotList p{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#666;}
+.hotList a{color:#333;}
+.hotList .scissors{width:16px; height:10px; display:block; position:absolute; bottom:-7px; right:10px; background:url(../images/iconScissors.png) no-repeat 0 -30px;}/*----剪刀、折角----*/
+
+/*----鼠标经过时----*/
+.hotList .on{background:#fffad4; border:1px dashed #f68c3d;}
+.hotList .on .liImg{border:1px solid #f06d18;}
+.hotList .on h3 a{color:#e34500;}
+.hotList .on .scissors{width:14px; height:15px; background-position:0 0; bottom:-1px; right:-1px; _right:-2px;}
+/*----鼠标经过时 end----*/
+
+/*========热门优惠券列表 end========*/
+/*========专区 ========*/
+.prefecture{ width:960px; height:555px;}
+.prefecture .RightFrame{width:767px;_width:767px;height:555px;float:left;display:inline;margin-left:3px; padding:0;}
+.prefecture .RightFrame .lmy-lefttltie{ width:10px;height:555px; margin-left:3px; _margin-left:3px; background-image:url(../images/leftFrameBG.gif); background-position:0 0; float:left;}
+.prefecture .RightFrame .lmy-middletltie{ width:744px;_width:744px;height:555px; padding:0; display:inline; background:url(../images/leftFrameBG.gif) repeat-x ; background-position:0px -567px; float:left;}
+.prefecture .RightFrame .lmy-righttltie{ width:10px;height:555px; _margin-top:-555px; background-image:url(../images/leftFrameBG.gif); background-position:-19px 0; float:left;_ float:right;}
+.prefecture .RightFrame .tuan-lefttltie{ width:10px;height:555px; margin-left:3px; _margin-left:3px; background-image:url(../images/BG/FrameBG.gif); background-position:0 0; float:left;}
+.prefecture .RightFrame .tuan-middletltie{ width:744px;_width:744px;height:555px; padding:0; display:inline; background:url(../images/BG/FrameBG.gif) repeat-x ; background-position:0px -567px; float:left;}
+.prefecture .RightFrame .tuan-righttltie{ width:10px;height:555px; _margin-top:-555px; background-image:url(../images/BG/FrameBG.gif); background-position:-19px 0; float:left;_ float:right;}
+.picAD{width:510px; height:190px; padding-top:12px;  padding-left:18px; margin:0;}
+/*========专区 end========*/
+/*========优惠卷专区列表========*/
+.CouponsZone{width:510px; display:inline; }
+.CouponsZone ul{width:520px; margin:0px 0px 0px 0px; margin:5px 0 0 5px !important; _margin:4px 0px 0px -8px;overflow:hidden; zoom:1;}
+.CouponsZone li{width:223px;_width:215px;height:57px; padding:7px 6px 7px 7px; margin:4px 0 6px 0px;*margin:6px 0 6px 14px; margin:5px 0 6px 20px !important; float:left; position:relative; border:1px dashed #999; line-height:16px; background:#fff;}
+.CouponsZone .liImg{width:55px; height:53px; margin-right:7px; padding:1px; overflow:hidden; float:left; border:1px solid #9e9e9e; background:#fff;}
+.CouponsZone h3{width:145px; float:left; width:140px; margin:3px 0 3px 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:14px; font-weight:100;}
+.CouponsZone h3 a{color:#0056a5;}
+.CouponsZone p{width:145px;overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#666;float:left;}
+.CouponsZone a{color:#333;}
+.CouponsZone .scissors{width:16px; height:10px; display:block; position:absolute; bottom:-7px; right:10px; background:url(../images/iconScissors.png) no-repeat 0 -30px;}/*----剪刀、折角----*/
+
+/*----鼠标经过时----*/
+.CouponsZone .on{background:#fffad4; border:1px dashed #f68c3d;}
+.CouponsZone .on .liImg{border:1px solid #f06d18;}
+.CouponsZone .on h3 a{color:#e34500;}
+.CouponsZone .on .scissors{width:14px; height:15px; background-position:0 0; bottom:-1px; right:-1px; _right:-2px;}
+/*----鼠标经过时 end----*/
+
+/*========优惠卷专区列表 end========*/
+/*========左边的框 ========*/
+.prefecture .Leftframe{width:190px; height:552px;display:inline; position:relative; background:#fff;}
+.prefecture .Leftframe .lise{width:218px;top:260px; left:0; position:absolute; z-index:99;}
+.prefecture .Leftframe .lise ul{}
+.prefecture .Leftframe .lise ul li{ height:96px; background:url(../images/frameBtn.gif) no-repeat;}
+.prefecture .Leftframe .lise .tuanQu{ background-position:0 0; display:block;}
+.prefecture .Leftframe .lise .tuanQu:hover{ background-position:-218px 0;}
+.prefecture .Leftframe .lise .tuanQu .tuanQuON{ background-position:-218px 0;}
+.prefecture .Leftframe .lise .youhuiQu{ background-position:0 -105px;}
+.prefecture .Leftframe .lise .youhuiQu:hover{ background-position:-218px -105px;}
+.prefecture .Leftframe .lise .youhuiQu .youhuiQuON{ background-position:-218px -105px;}
+.prefecture .Leftframe .lise .activeQu{ background-position:0 -208px;}
+.prefecture .Leftframe .lise .activeQu:hover{ background-position:-218px -208px;}
+.prefecture .Leftframe .lise .activeQu .activeQuON{ background-position:-218px -208px;}
+/*========左边的框 end========*/
+
+/*========最新优惠卷专区=======*/
+.Newcoupons{width:767px; float:left;}
+.Newcoupons a{ color:#0056a5;}
+.NewcouponsBG{ background-color:#fff9e6;}
+.Newcoupons tr th{ height:31px; padding:0 10px; line-height:31px; color:#5a4518; text-align:left; background:url(../images/couponsTitleBG.gif) repeat-x;}
+.Newcoupons tr td{ padding:0 10px; line-height:30px;}
+.integralList{width:763px; display:inline; float:left;}
+.integralList ul{height:200px; float:left; display:inline;}
+.integralList li{padding:2px; margin:0 10px 10px 0; display:inline; float:left; overflow:hidden; border:1px solid #c8c8c8;}
+.integralList .list1{width:530px; margin:20px 0 0 17px;}
+.integralList .list1 li{width:160px; height:200px;}
+.integralList .list2{width:215px;margin:20px 0 0 0;}
+.integralList .list2 li{width:200px; height:55px;}
+
+/*========最新优惠卷专区 end========*/
+
+
+/*========折扣商家========*/
+.discountMerchant ul{margin:6px 0 10px 3px; overflow:hidden; zoom:1;}
+.discountMerchant li{widtdh:140px; height:205px; padding:7px; float:left; display:inline; position:relative; border-right:1px dashed #e5e5e5; line-height:18px;}
+.discountMerchant .liImg{width:135px; height:135px;  padding:2px; margin-bottom:5px; display:block; overflow:hidden; border:1px #c8c8c8 solid;}
+.discountMerchant h3{width:140px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;font-size:13px; font-weight:bold;}
+.discountMerchant h3 a{color:#a82f00;}
+.discountMerchant p{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#666;}
+.discountMerchant a{color:#333;}
+.discountMerchant .iconDiscount{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/angular.png) no-repeat; font-size:14px; font-weight:bold; color:#fff; text-indent:-3em; line-height:18px;}
+.discountMerchant .NO1{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant .NO2{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-39px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant .NO3{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-78px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant .NO4{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-117px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}/*--左上角的折扣---*/
+.discountMerchant2 .lost{ border-right:0;}
+.discountMerchant2 ul{margin:6px 0 10px 3px; overflow:hidden; zoom:1;}
+.discountMerchant2 li{widtdh:140px; height:89px; padding:10px;_padding:10px 10px 5px 10px; float:left; display:inline; position:relative; border-right:1px dashed #e5e5e5; line-height:18px;}
+.discountMerchant2 .liImg{width:89px; height:89px;  padding:2px; margin-bottom:8px;_margin-bottom:0px; display:block; overflow:hidden; border:1px #c8c8c8 solid;}
+.discountMerchant2 .NO1{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant2 .NO2{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-39px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant2 .NO3{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-78px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}
+.discountMerchant2 .NO4{width:39px; height:39px; position:absolute; top:7px; left:7px; background:url(../images/NO.gif) no-repeat; background-position:-117px 0; font-size:14px; font-weight:bold; color:#fff; text-indent:5px; line-height:24px;}/*--左上角的折扣---*/
+/*========折扣商家 end========*/
+
+
+
+/*========最新加入========*/
+.brandBigList ul{margin:6px 0 3px 5px; overflow:hidden; zoom:1;}
+.brandBigList li{width:135px; height:55px; margin:6px; padding:2px; float:left; display:inline; overflow:hidden;border:1px #c8c8c8 solid;}
+
+
+/*========最新加入 end========*/
+
+/*========优惠卷分类列表========*/
+.quanLise{width:205px; height:auto;  float:right;}
+.quanLise .h2title{width:205px;*width:209px; height:34px; margin-top:12px;  line-height:30px; font-size:14px; font-weight:bold; overflow:hidden;}
+.quanLise .h2title .h2titleTL{width:8px;height:34px; float:left;background-image:url(../images/BG/quanLiseBG.png); background-position:0 0}
+.quanLise .h2title .h2titleTC{width:182px;*width:182px;_width:178px;height:34px; padding-left:7px; float:left;background-image:url(../images/BG/quanLiseBG.png); background-position:0 -36px}
+.quanLise .h2title .h2titleTR{width:8px;height:34px; float:left;background-image:url(../images/BG/quanLiseBG.png); background-position:-8px 0}
+.quanLise .quanmain{ width:203px;_width:199px;height:auto; margin:0; padding:0; border:1px solid #cecece; border-top:none; background-color:#fbf7ea;}
+.quanLise .quanmain ul{ padding:3px 0; _padding:0px 0; overflow:hidden;clear:both;}
+.quanLise .quanmain li{ width:168px; height:27px;  padding-left:18px;margin:5px 9px;_margin:5px auto; line-height:27px; font-size:14px; background:url(../images/BG/quanList.png) no-repeat; background-position:0px 0px;  }
+.quanLise .quanmain li img{ margin-top:-3px; margin-right:17px;}
+.quanLise .quanmain li:hover{background:url(../images/BG/quanList.png) no-repeat; background-position:0 -29px; color:#C30;}
+.quanLise .quanmain li a:hover{ color:#C30; }
+.quanLise .quanBottom{width:205px; height:8px; background:url(../images/BG/quanbottomBG.png) no-repeat;}
+.shangquan{ padding:3px 3px 1px 3px;}
+.shangquan .shangquanmain{width:188px; margin:5px; border:1px solid #cecece; -moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px; line-height:24px; background:#f7f7f7;}
+.shangquan td{ padding:5px 8px;padding:3px 8px !important;}
+.shangquan a{color:#000;}
+.shangquan a:hover{ color:#C30;}
+
+/*========优惠卷分类列表 end！========*/
+/*========优惠卷订阅&我的收藏========*/
+.SubscribeTOcollect{width:185px; height:auto; margin-right:5px; float:left;}
+.Subscribe{width:185px; height:122px;}
+.Subscribe .SubscribeTL{ width:5px; height:122px; background:url(../images/BG/dingyueBG.png) no-repeat; background-position:0 0;float:left;}
+.Subscribe .SubscribeTC{width:175px;_width:170px;height:122px;background:url(../images/BG/dingyueBG.png) repeat-x; background-position:0 -122px;float:left;}
+.Subscribe .SubscribeTR{width:5px;height:122px; background:url(../images/BG/dingyueBG.png) no-repeat;background-position:-5px 0px;float:left;}
+
+.Subscribe .SubscribeTC .h2dingyue{ width:175px;_width:160px; _padding-top:5px; margin:0 auto; height:30px; line-height:30px; color:#555; font-weight:bold; text-align:center;}
+.Subscribe .SubscribeTC .SubMain{ width:171px;_width:160px; height:84px; margin:0 auto;_margin-top:-10px; background:#fff; border:1px solid #e1e1e1;}
+.Subscribe .SubscribeTC .SubMain p{ line-height:25px; padding:5px;}
+ 
+.Subscribe .SubscribeTC .SubMain .dingyueInput{ width:151px; height:24px; line-height:24px; padding:0 5px;border:none; background:url(../images/BG/dingyueInput.png) no-repeat; color:#808080;}
+.Subscribe .SubscribeTC .SubMain .dingyueBtn{ width:46px; height:20px; margin-top:5px;*margin-top:-20px;_margin-right:-5px; float:right;text-align:center; background:url(../images/button/dingyueBtn.png) no-repeat; border:none; color:#fff;}
+.Subscribe .SubscribeTC .SubMain .dingyueBtn:hover{ background-position:0 -20px;}
+
+.collect{width:185px; height:auto; margin-top:5px;}
+.collect .h2shoucang{width:185px; height:27px; line-height:27px;_padding-top:5px; color:#555;font-weight:bold; background:url(../images/BG/shoucangtitleBG.png) no-repeat; text-align:center;}
+.collect ul{width:185px;_margin-top:-5px;}
+.collect ul li{width:169px; height:24px; padding:0px 8px; line-height:24px; margin-top:1px;}
+.collect ul li a{ color:#000;}
+.collect ul li:hover{ background:#c8c8c8;}
+.bge4e4e4{ background:#e4e4e4;}
+.bgf3f3f3{ background:#f3f3f3;}
+
+/*========优惠卷订阅&我的收藏========*/
+
+/*============活动专区=============*/
+.actives{width:398px; height:545px; margin-top:12px; margin-left:16px;_margin-left:7px; float:left;}
+.actives .activesAD{width:398px;height:480px; overflow:hidden;}
+.actives .activeTitleBG{width:396px; height:27px; margin-top:10px; border:1px solid #a7a7a7; background:url(../images/BG/activesBG.gif) repeat-x;}
+.actives .activeTitleBG ul li{width:132px; height:27px; line-height:27px;  font-size:13px;font-weight:bold; color:#5c5c5c; text-align:center; float:left;}
+.actives .activeTitleBG .on{ margin-top:0; background:url(../images/BG/activesBG.gif); background-position:0 -27px; color:#7a5913;}
+
+.activesNote{width:320px; height:auto; margin-left:10px; margin-top:14px; float:left;}
+
+.activesNote .activesNoteTitle{width:320px; height:auto; overflow:hidden;}
+.activesNote .activesNoteTitle .NoteTitleTL{width:8px;height:34px; float:left;background-image:url(../images/BG/quanLiseBG.png); background-position:0 0}
+.activesNote .activesNoteTitle .NoteTitleTC{width:282px;height:34px; padding-left:10px; float:left; font-size:14px; font-weight:bold; line-height:32px;background-image:url(../images/BG/quanLiseBG.png); background-position:0 -36px}
+.activesNote .activesNoteTitle .NoteTitleTR{width:8px;height:34px; float:left;background-image:url(../images/BG/quanLiseBG.png); background-position:-8px 0}
+.activesNote .activesNoteMain{ width:304px;height:auto;display:inline; margin:0; padding:1px; border:1px solid #cecece; float:left; border-top:none; background-color:#fbf7ea;}
+.activesNote .activesNoteMain ul{ margin:0 5px 5px 5px;overflow:hidden;zoom:1;}
+.activesNote .activesNoteMain ul li{width:293px;font-size:14px; margin-top:5px; font-weight:bold; float:left; line-height:30px; overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+.hotList .liImg{width:55px; height:45px; margin-right:7px;overflow:hidden; float:left; border:1px solid #9e9e9e; background:#fff;}
+.activesNote .activesNoteMain .Img{width:51px; height:51px; margin:6px; float:left;}
+.activesNote .activesNoteMain h5{ width:224px; margin-right:6px; margin-top:5px; font-size:14px; float:left; line-height:22px; overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+.activesNote .activesNoteMain p{ width:224px;margin-top:5px; margin-right:6px; float:left;line-height:24px;font-weight:normal;overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#666;}
+.activesNote .activesNoteMain p a{ color:#06C; }
+.BGyellow{ background:#fff3ca; height:63px;}
+.BGwhite{ background:#fff;height:30px; text-indent:15px;}
+.BGfff7dc{ background:#fff7dc;height:30px; text-indent:15px;}
+
+/*============活动专区完=============*/
+
+/*============团购专区  =============*/
+.groupBuying{width:716px; height:82px; margin:14px; line-height:36px; font-family:"微软雅黑","黑体", "宋体"; font-size:24px; font-weight:bold; text-shadow:2px 2px 3px rgba(50, 50, 50, 0.3); color:#000;}
+.tuanShow .showRight{ width:506px;float:right;}
+.tuanShow .showRight .rightImg{ width:160px; height:311px; margin-right:10px;- margin-right:5px;float:right}
+.tuanShow .showRight .rightImg .botImg{ margin-top:6px;}
+.tuanShow .showRight .leftImg{float:left}/*--团购大小图片位置end--*/
+.tuanShow .showLeft{ width:212px; height:414px;float:left; margin:10px 0 10px 14px; _margin:10px 0 10px 6px;border:1px solid #999; border-radius:8px;}
+.tuanShow .showLeft .showP{ width:200px; margin:20px 7px 10px 7px; line-height:20px; font-size:14px;}
+.tuanShow .showLeft .showP ul li{width:66px; float:left; font-size:12px;}
+.tuanShow .showLeft .btn-buy{ height:52px; background:url(../images/tuanshow/buy-btngif.gif) no-repeat transparent;z-index:500}
+.showLeft{ position:relative}
+.tuanShow .showLeft .procuremenBtn{ width:234px; height:54px;position:absolute;top:70px ;*top:70px;left:0; }
+.tuanShow .showLeft .tuan-btn{ width:144px; height:38px; background:url(../images/tuanshow/readyGObtn.gif) no-repeat;border:none;position:absolute; left:60px; top:6px}
+.tuanShow .showLeft .End-btn{ width:100px; height:39px; background:url(../Images/fajin/End-btn.png) no-repeat;border:none;position:absolute; left:100px; top:8px}
+.tuanShow .showLeft .tuan-btn
+.tuanShow .showLeft .procuremenBtn p{ width:80px; margin-left:13px;color:#fff;font:14px "微软雅黑",Simsun} 
+.tuanShow .showLeft .price-num{ color:#FFF;*color:#FFF;_color:#FFF; font:bold 25px/30px "微软雅黑","黑体"}
+
+.tuanShow .showLeft .surplus{*padding:60px 0 0 0px; margin:150px 0 0 20px !important;margin:60px 0 0 20px;_margin:20px 0 0 20px; font-size:20px; font-family:"微软雅黑","黑体", "宋体"; overflow:hidden;}
+.tuanShow .showLeft .count{ width:211px; height:40px; margin-top:10px; margin-left:1px;background:url(../images/tuanshow/count211,32.gif) no-repeat; border-bottom:1px dashed #ccc}
+.showLeft .count .time_num{ width:22px;margin:0 17px; font:bold 20px/30px "微软雅黑",Simsun; overflow:hidden }
+.tuanShow .showLeft .bpart{ width:212px; margin-top:80px;text-align:center;color:#c71824; font:18px/36px "微软雅黑","黑体"}
+.tuanShow .showLeft .bpart .buyed{ margin-top:15px;font-size:18px;}
+.tuanShow .showLeft .bpart02{ width:212px; *padding-top:80px; margin-top:80px;text-align:center;color:#c71824; font:18px/25px "微软雅黑","黑体"}
+.tuanShow .showLeft .buy-tip{ width:212px; margin-top:-5px; text-align:center; font-stretch:normal}
+.tuanShow .showLeft .succss-buy .success{font:bold 20px/30px "微软雅黑","黑体" }
+ .tuanShow .showLeft .succss-buy { width:90px; margin:4px auto 0 auto; height:65px; padding-left:53px;background:url(../images/tuanshow/success46,60.gif) no-repeat left center;}
+.tuanShow .showLeft .failure-buy { width:90px; margin:4px auto 0 auto; height:65px; padding-left:53px;background:url(../Images/fajin/failure46,60.gif) no-repeat left center;}
+.tuanShow .showLeft .failure-buy .failure{font:bold 20px/30px "微软雅黑","黑体" }
+.tuanShow .showLeft .END-buy .END{font:bold 20px/30px "微软雅黑","黑体" }
+.tuanShow .showLeft .END-buy { width:90px; margin:4px auto 0 auto; padding-top:70px; height:65px;background:url(../Images/fajin/success46,60.gif) no-repeat top center;}
+.tuanShow .showLeft .END-buy .END{font:bold 20px/30px "微软雅黑","黑体" }
+
+/*============团购专区完=============*/
+

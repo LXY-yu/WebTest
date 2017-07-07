@@ -1,0 +1,20 @@
+p ,h1{margin:0;padding:0; font-family:Tahoma, "ËÎÌו";}
+a{ text-decoration:none; color:#006699;}
+a:hover{text-decoration:underline; color:#006699;}
+.tips{width:720px; height:auto; margin:0 auto; padding:20px 10px 15px; border:1px solid #e2e2e2;}
+.tipsSuccess{width:620px; height:auto; margin:0 auto;padding:5px 0 10px 80px; background: url(../images/tipsFace.gif) no-repeat; font-size:12px;}
+.tipsSuccess h1{line-height:22px; font-size:13px;}
+.tipsSuccess p{line-height:20px;}
+
+
+.tipsError{width:480px; height:55px; margin:0 auto;padding:5px 0 10px 80px; background:url(../images/tipsFace.gif) no-repeat 0 -245px;font-size:12px;}
+.tipsError h1{line-height:22px; font-size:13px;}
+.tipsError p{line-height:20px;}
+
+
+.tipsText{width:560px; height:80px; margin:0 auto; padding:10px 0 15px; border-top:1px dashed #f0f0f0;}
+.tipsText h1 {line-height:22px;color:#f47f12; font-size:13px;}
+.tipsText p{color:#666; font-size:12px; line-height:18px;}
+
+.fontR{color:#FF6600;}
+.fontB{color:#006699;}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*
+-------------------------------
+Site:        电子通宝卡平台 团购
+Author:       liangminying
+Updated:     2011-03-28
+Updated by:
+-------------------------------
+*/
+/*============明天团购公告团购列表=============*/
+.tomorrowTuan{ width:222px; margin:0 auto;}
+.tomorrowTuan .tomorrowTop{ height:120px; margin:16px 8px; }
+.tomorrowTuan .tomorrowTop .backTomorrow{ width:31px; height:34px; float:left;margin-top:43px; background:url(../images/LeftRight.gif) no-repeat; background-position:0 0; display:inline-block;}
+.tomorrowTuan .tomorrowTop .backTomorrow:hover{ background-position:0px -34px;display:inline-block;}
+.tomorrowTuan .tomorrowTop .IMGTomorrow{width:120px; height:120px; float:left; margin:0 11px; border-radius:10px; border:1px solid #CCC;display:inline-block;}
+.tomorrowTuan .tomorrowTop .nextTomorrow{width:31px; height:34px; float:left; margin-top:43px; background:url(../images/LeftRight.gif) no-repeat; background-position:-33px 0; display:inline-block;}
+.tomorrowTuan .tomorrowTop .nextTomorrow:hover{background-position:-33px -34px;display:inline-block;}
+
+.tomorrowTuan .tomorrowBottom{ text-align:center;}
+.tomorrowTuan .tomorrowBottom a{ color:#0056a5}
+.tomorrowTuan .tomorrowBottom h4{ font-size:14px;font-weight:bold; padding:0 0 5px 0;  line-height:22px;}
+.tomorrowTuan .tomorrowBottom p{ line-height:22px;padding:0 0 8px 0;}
+.tomorrowTuan .tomorrowBottom p span{ text-decoration:line-through;}
+/*============明天天团购公告团购列表=============*/
+/*============今天团购公告团购列表=============*/
+.todayTuanNote{width:720px; height:92px; margin:3px auto; background:url(../images/BG/todayTuanBG.gif) repeat-x;}
+.todayTuanNote .TuanNoteTL{ width:5px;height:88px; background-position:0px 0; background-repeat:no-repeat; float:left;}
+.todayTuanNote .TuanNoteTC{ width:710px;height:88px; background:url(../images/BG/todayTuanBG1px.gif) repeat-x; float:left;}
+.todayTuanNote .TuanNoteTR{ width:5px;height:88px; background-position:-5px 0;background-repeat:no-repeat;  float:left;}
+
+.NoteTuan{ width:503px; height:84px; margin:8px 5px 0 3px; float:left;}
+.NoteTuan ul{}
+.NoteTuan ul li{ width:162px; height:84px; padding-right:5px; float:left;color:#808080;}
+.NoteTuan .NoteImg{width:67px; height:67px; float:left;}
+.NoteTuan .Noteh5{width:90px; height:22px; padding-left:5px; font-weight:bold; color:#000; line-height:22px; overflow:hidden; float:left}
+.NoteTuan .Noteh5 a{ color:#808080;}
+.NoteTuan .Noteh5 a:hover{ color:#000;}
+.NoteTuan .NoteP{width:90px; height:45px; padding-left:5px; line-height:22px; overflow:hidden; float:left; }
+.NoteTuan .NOTEOn{color:#000; background:url(../images/BG/todayTuanBGON.gif) no-repeat bottom;}
+.NotePlay{ width:22px; height:80px;  padding-top:6px; padding-left:5px; background:url(../images/BG/play.png) no-repeat; line-height:18px; color:#fff; font-weight:bold; font-size:13px; float:left;}
+.NotePlayBody{width:162px; margin:8px 0px 0 5px; _margin:8px 0px 0 3px;float:left;}
+.NotePlayBody ul li{width:162px; height:84px; float:left;}
+.NotePlayBody .NoteImg{width:67px; height:67px; float:left;}
+.NotePlayBody .Noteh5{width:90px; height:45px; padding-left:5px; font-weight:bold; color:#000; line-height:22px; overflow:hidden; float:left}
+.NotePlayBody .Noteh5 a{ color:#808080;}
+.NotePlayBody .Noteh5 a:hover{ color:#000;}
+.NotePlayBody .NoteP{width:90px; height:22px; padding-left:5px; _padding-left:5px;line-height:22px; overflow:hidden; float:left; color:#808080;}
+.w90{ width:90px;}
+
+/*============今天团购公告团购列表 end=============*/
+/*============团购内容=============*/
+.notice{ width:722px; height:524px;border:3px solid #c8c8c8;_border:2px solid #c8c8c8}
+.notice .dazibao{ width:722px; height:92px; background:url(../images/BG/noticebg1,95.gif) repeat-x;border:1px solid #c2c2c2; } .notice .dazibao p{ width:690px; margin:12px auto 0 auto; font-family: "Microsoft YaHei" "黑体" "宋体"; font-size:22px; text-shadow:2px 2px 3px rgba(50, 50, 50, 0.3); color:#000;}/*--左边团购标题end--*/
+.show .showRight{ width:506px;float:right;}
+.show .showRight .rightImg{}
+.show .showRight .rightImg .botImg{ margin-top:7px;}
+.show .showRight .leftImg{float:left}/*--团购大小图片位置end--*/
+.show .showLeft{ width:212px;float:left;}
+.show .showLeft .showP{ width:200px; margin:20px 7px 10px 7px; line-height:20px; font-size:14px;}
+.show .showLeft .showP ul li{width:66px; float:left; font-size:12px;}
+.show .showLeft .btn-buy{ height:52px; background:url(../images/tuanshow/buy-btngif.gif) no-repeat transparent;z-index:500}
+.showLeft{ position:relative}
+.show .showLeft .procuremenBtn{ width:234px; height:54px;position:absolute;top:60px ;*top:60px;left:0; }
+.show .showLeft .tuan-btn{ width:144px; height:38px; background:url(../images/tuanshow/readyGObtn.gif) no-repeat;border:none;position:absolute; left:60px; top:8px}
+.show .showLeft .End-btn{ width:100px; height:39px; background:url(../Images/fajin/End-btn.png) no-repeat;border:none;position:absolute; left:100px; top:8px}
+.show .showLeft .tuan-btn
+ .show .showLeft .procuremenBtn p{ width:80px; margin-left:13px;color:#fff;font:14px "微软雅黑",Simsun} 
+.show .showLeft .price-num{ color:#FFF;*color:#FFF;_color:#FFF; font:bold 25px/30px "微软雅黑","黑体"}
+
+.show .showLeft .surplus{ *padding:60px 0 0 0px; margin:140px 0 0 20px !important;margin:20px 0 0 20px;_margin:0px 0 0 20px; font-size:16px; font-family:"微软雅黑","黑体", "宋体"; overflow:hidden; font-weight:bold;}
+.show .showLeft .count{ width:211px; height:40px; margin-top:10px; margin-left:4px;background:url(../images/tuanshow/count211,32.gif) no-repeat; border-bottom:1px dashed #ccc}
+.showLeft .count .time_num{ width:22px;margin:0 17px; font:bold 20px/30px "微软雅黑",Simsun; overflow:hidden }
+.show .showLeft .bpart{ width:212px; margin-top:90px;text-align:center;color:#c71824; font:18px/36px "微软雅黑","黑体"}
+.show .showLeft .bpart .buyed{ margin-top:15px;font-size:18px;}
+.show .showLeft .bpart02{ width:212px; *padding-top:80px; margin-top:80px;text-align:center;color:#c71824; font:18px/25px "微软雅黑","黑体"}
+.show .showLeft .buy-tip{ width:212px; margin-top:-5px; text-align:center; font-stretch:normal}
+.show .showLeft .succss-buy .success{font:bold 20px/30px "微软雅黑","黑体" }
+ .show .showLeft .succss-buy { width:90px; margin:4px auto 0 auto; height:65px; padding-left:53px;background:url(../images/tuanshow/success46,60.gif) no-repeat left center;}
+.show .showLeft .failure-buy { width:90px; margin:4px auto 0 auto; height:65px; padding-left:53px;background:url(../Images/fajin/failure46,60.gif) no-repeat left center;}
+.show .showLeft .failure-buy .failure{font:bold 20px/30px "微软雅黑","黑体" }
+ .show .showLeft .END-buy .END{font:bold 20px/30px "微软雅黑","黑体" }
+.show .showLeft .END-buy { width:90px; margin:4px auto 0 auto; padding-top:70px; height:65px;background:url(../Images/fajin/success46,60.gif) no-repeat top center;}
+.show .showLeft .END-buy .END{font:bold 20px/30px "微软雅黑","黑体" }
+
+/*--文字部分start--*/
+.introduction{ height:100%; margin:10px;}
+.introduction h5{width:100%; font-size:14px; line-height:35px; font-weight:bold; text-align:left;}
+.introduction .letterL{ width:20px; line-height:25px; vertical-align:top; float:left}
+.introduction .letterR{ width:690px;line-height:25px; float:left;}
+.introduction p{width:710px; line-height:2em;}
+.introduction .deail-coin{ padding-left:35px; background:url(../Images/fajin/siaresTip26,37.gif) no-repeat left center}
+.introduction .detail .detailText{ text-indent:2em;}
+
+/*=====团购内容end====*/
+
+/*=========往期团购========*/
+
+.tomNotice ul {width:874px; height:328px; padding:15px 42px;  overflow:hidden}
+.tomNotice ul li{ width:268px; height:324px;border:1px solid #dcdcdc; border-radius:5px; float:left; display:block}
+.tomNotice .timeSkill{ width:170px; height:36px; margin:8px 0 0 10px; font:bold 20px/30px "微软雅黑","黑体" ; color:#000;}
+.tomNotice .productionName{height:36px;text-shadow:2px 2px 3px rgba(50, 50, 50, 0.3);}
+.timeSkill .sec-img{ width:75px; height:74px; display:block}
+.tomNotice .timeNum{ margin-left:3px; letter-spacing:13px;float:left; font-size:20px; color:#fff}
+.tomNotice p{ line-height:18px; color:#808080;}
+.tomNotice a{ color:#000;}
+.tomNotice a:hover{ color:#0056a5;}
+.ml31{margin-left:31px;}
+/*=========往期团购 end========*/
+
+.KeFuTel{width:182px; height:180px; padding-top:10px;_padding-left:10px; margin:0 auto;  line-height:25px; text-align:center;}
+.KeFuTel h6{padding:0 5px;  font-size:14px; line-height:25px; font-weight:bold;color:#003f72;text-align:left;}
+.KeFuTel p{ padding:0 5px; margin:0; text-align:left;}
+.KeFuTel p a{ color:#06C;}
+
+.KeFuTel02{width:182px; height:40px; padding-top:160px; margin:0 auto;  line-height:30px; text-align:center; font-family:"微软雅黑", "宋体"; font-size:22px; color:#003f72;background:url(../images/zixun.gif) top center no-repeat;}
+.KeFuTEXT{width:195px; height:auto; padding-top:10px; padding-left:5px; margin:0 auto;  line-height:25px; text-align:center;}
+.KeFuTEXT h6{padding:0 5px; margin-top:5px;  font-size:14px; line-height:25px; font-weight:bold;color:#003f72;text-align:left;}
+.KeFuTEXT p{ padding:0px; margin:0; text-align:left;}
+.KeFuTEXT p a{ color:#06C;}
+
+.addressBtn{ with:58px;_with:55px;*with:55px; width:58px !important; height:22px; float:left; line-height:20px;margin:0px 4px 0 0px; background:url(../images/button/addressBtn.gif) no-repeat; color:#794700; display:inline-block; border:none; text-decoration:none; }
+.addressBtn:hover{ background-position:0 -22px;display:inline-block}
+.inputOn{width:120px; height:20px; line-height:22px; padding-left:5px; border:1px solid #d29948; float:left;}
+.divput{ width:200px; height:22px; margin:8px 0; }

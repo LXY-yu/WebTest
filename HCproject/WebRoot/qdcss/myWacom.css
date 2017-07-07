@@ -1,0 +1,134 @@
+@import url(base.css);
+
+/*
+-------------------------------
+Site:        电子通宝卡平台 我的商盟
+Author:      kim
+Updated:     2011-04-28
+Updated by:
+-------------------------------
+*/
+
+
+/*我的商盟左边样式*/
+.myWacomLeft{ height:auto; width:190px; overflow:hidden; float:left;}
+.myWacomMenuTitle{ height:31px; line-height:31px; width:190px; background:url(../qdimages/zqf_myWacomLeftTitle.gif) no-repeat; overflow:hidden;}
+.myWacomSubMenu{ width:190px; overflow:hidden; border-left:1px solid #eec586;border-right:1px solid #eec586;border-bottom:1px solid #eec586;}
+.myWacomSubMenu tr td{ color:#512800; font-weight:bold; padding:7px 0px; background-color:#ffe2a4;  border-bottom:1px solid #f0c777; border-top:1px solid #fff; text-indent:15px;}
+.myWacomSubMenu  img{ margin-right:5px;}
+.myWacomSubMenu tr th{ color:#d75f00; font-weight:bold; padding:7px 0px 7px 30px; background:#fff7de; font-weight:normal; line-height:22px;_line-height:30px; text-align:left; font-weight:bold;}
+.myWacomSubMenu tr th a{ color:#848484;_height:22px; _line-height:22px; font-weight:normal; display:inline-block;}
+.myWacomSubMenu tr th a:hover{ font-weight:bold; color:#d75f00; text-decoration:underline;}
+
+
+/*我的商盟右边样式*/
+.myWacomRight{ height:auto; width:760px; overflow:hidden; float:right;}
+.myWacomRight h2{ font-weight:bold}
+
+.orderTable{margin:0px; border:1px solid #d6d6d2; border-top:none;}	
+.orderTable a:hover{ text-decoration:underline;}
+
+.orderTitle{ background:url(../qdimages/zqf_tableTitleBg.gif); height:36px; text-align:center; color:#a85700; border-left:1px solid #ccc;border-right:1px solid #ccc;}
+
+	/*------订单表头 start-----*/
+.orderTable thead th{height:35px; *height:34px; padding:0 10px; background:#f4f4f4; border-left:1px solid #d6d6d2; border-right:1px solid #d6d6d2;  border-bottom:1px solid #d6d6d2;font-size:12px; line-height:34px; font-weight:normal;}
+.orderTable thead .th2 th{font-weight:bold; text-align:center; color:#666;}
+.orderTable .orderNumber{color:#06F;}
+	/*------订单表头 end-----*/
+	
+	/*------订单表体 start-----*/
+.orderTable tbody td{padding:15px 0px; vertical-align:top; border:1px solid #e5e5e5; font-size:12px; line-height:20px;}
+.orderTable p{margin:0 10px; padding-left:5em; text-indent:-5em; line-height:180%;}
+.orderTable .payment{width:65px; height:25px; margin:5px auto; display:block; background:url(../qdimages/button/btnOrange65.gif) no-repeat; color:#fff; text-align:center; line-height:25px;}/*--payment:支付按钮--*/
+.orderTable .payment:hover{background-position:0 -35px; text-decoration:none;}
+.orderTable .takeGoods{width:65px; height:25px; margin:5px auto; display:block; background:url(../qdimages/button/btnOrange65.gif) no-repeat; color:#fff; text-align:center; line-height:25px;}/*--takeGoods:确认收货按钮--*/
+.orderTable .takeGoods:hover{background-position:0 -35px; text-decoration:none;}
+.orderTable .storeName{ width:110px; height:auto; display:block; overflow:hidden; margin:0px auto;}
+.orderTable .storeIfGood a{ width:65px; height:25px; display:block; margin:10px auto 0px auto; background:url(../qdimages/button/zqf_btnTalk.png) no-repeat; background-position:0 -25px; line-height:25px; text-indent:30px; color:#a84700;}
+.orderTable .storeIfGood a:hover{background:url(qdimages/button/zqf_btnTalk.png) no-repeat; background-position:0 0px; text-decoration:none;  }
+.orderTable .storeAdvice a{ width:65px; height:25px; display:block; margin:10px auto 0px auto; background:url(../qdimages/button/zqf_btnTalk.png) no-repeat; background-position:0 -25px; line-height:25px; text-indent:30px; color:#a84700;}
+.orderTable .storeAdvice a:hover{background:url(../qdimages/button/zqf_btnTalk.png) no-repeat; background-position:0 0px; text-decoration:none;  }
+
+.orderTable .price{color:#b00303;}
+.orderTable .add{margin:0 4px 0 -12px; color:#b00303; font-weight:bold;}
+.orderTable .view{color:#2766f4;}
+	/*------订单表体 end-----*/
+/*========订单中心 end=======*/
+
+/*========表格中的商品信息 start=======*/
+.orderProInfo {margin-left:8px;}/*--orderProInfo：商品信息--*/
+.orderProInfo .proImg{width:50px; height:50px; padding:1px;margin:0 10px 0 0;float:left; display:block;  border:1px solid #b6b6b6;}
+.orderProInfo .proImg img{width:50px; height:50px;}
+.orderProInfo p{margin:0;padding-left:0; float:left; overflow:hidden; line-height:150%; text-indent:0; text-align:left;}
+.orderProInfo .proName{height:20px; margin:0 0 7px; font-size:13px; }
+.orderProInfo .proName a{color:#333;}
+
+.orderProInfo .proAttribute{width:280px; height:20px; color:#666;}
+.orderProInfo .proAttribute .span2{width:100px; display:inline-block;}
+/*========表格中的商品信息 end=======*/
+
+
+.memberInput{ margin:25px auto 10px auto;}
+.memberInput th{ padding:10px 0px; text-align:right;  color:#333}
+.memberInput td{ padding:10px 0px; text-align:left; text-indent:15px;}
+.memberInput .joinInput{ width:400px; height:24px; border:1px solid #b4b4b4;}
+.memberInput textarea{ width:400px; border:1px solid #b4b4b4;}
+
+/*========订阅服务 start=======*/
+.subscribe{ width:90px; height:25px; line-height:25px; background:url(../qdimages/button/90,25btn.gif) no-repeat; border:none; color:#fff; font-size:14px; font-weight:bold; position:absolute; top:4px; right:10px}
+.subscribe:hover{ background-position:0 -36px}
+.fal-server { border:1px solid #ccc}
+.fal-server th{ padding:7px; text-align:center; color:#808080; background:#fffbdf; border-bottom:1px solid #ccc; border-right:1px  solid #ccc}
+.fal-server td{ padding:5px; border-right:1px  solid #ccc; text-align:center}
+.fal-server td.after{ background:#f9f5e3; border-top:1px solid #ccc; border-bottom:1px solid #ccc; text-align:center}
+.fal-server td p.shopName{ width:200px; height:30px; margin:0 auto;overflow:hidden; line-height:30px; text-overflow:ellipsis;}
+.fal-server td span a{ color:#F60}
+.fal-server td span a:hover{ text-decoration:underline}
+/*========订阅服务 end=======*/
+
+/*========我的资料 start=======*/
+.memberInput td.insArea{ width:400px;}
+.memberInput .intCheck,
+.memberInput span{ float:left; height:20px; line-height:20px;}
+.memberInput .intCheck{margin-left:15px;margin-left:5px\9;*margin-left:0px }
+.memberInput span{margin-left:-8px\9;  *margin-left:-13px;  margin-right:10px; }
+.inforSure,
+.inforCanle{ width:162px; height:42px; line-height:42px; border:none; color:#fff; font-family:\5fae\8f6f\96c5\9ed1; background:url(../qdimages/button/fal_btnApply162,42.png) no-repeat; font-size:23px; }
+.inforSure{ margin-right:20px; }
+.inforSure:hover{ background-position:0 -65px;}
+.inforCanle{ background-position:0 -143px;}
+.inforCanle:hover{ background-position:0 -204px;}
+.verify{ margin:0px 0 0 20px; *margin-left:0; color:#09C; text-align:-10px; }
+.verify:hover{ text-decoration:underline}
+/*========我的资料 end=======*/
+
+/*========我的优惠券 start=======*/
+.fal-orderTitle{ border:1px solid #ccc;}
+.fal-orderTitle th{ background:url(qdimages/zqf_tableTitleBg.gif); height:36px; text-align:center; color:#a85700;}
+.fal-orderTitle .proImg{padding:1px; border:1px solid #ccc; float:left}
+.fal-orderTitle .proName{ width:100px; height:40px; line-height:22px; overflow:hidden; float:right; font-weight:bold}
+.fal-orderTitle .proName2{ width:220px; height:40px; margin-left:10px; line-height:22px; overflow:hidden; float:left; font-weight:bold}
+
+.couName{ width:120px; height:20px; line-height:20px; overflow:hidden; display:inline-block}
+.reissue { width:41px; height:21px; margin-right:10px; background:url(../qdimages/button/fal-chack41,20.gif) no-repeat;border:none; color:#fff; font-family:\5fae\8f6f\96c5\9ed1;  font-size:12px;}
+.mark{ width:41px; height:22px; background:url(../qdimages/button/fal-edit41,20.gif) no-repeat;border:none; color:#fff; font-family:\5fae\8f6f\96c5\9ed1;  font-size:12px;}
+.reissue:hover{ background-position:0 -31px}
+.mark:hover{ background-position:0 -32px}
+.botLine{ border-bottom:1px dashed #ccc}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

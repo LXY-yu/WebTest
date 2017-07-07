@@ -1,0 +1,46 @@
+/*
+-------------------------------
+Site:       注册页面
+Author:      fengailing
+Updated:     2011-04-29
+Updated by:
+-------------------------------
+*/
+
+
+.register { width:892px; margin:0 auto; padding:35px 0 120px 0;/*background:#000*/}
+.register h2{ width:220px; height:33px; margin:0 auto;font-family:\5fae\8f6f\96c5\9ed1;  font-size:24px; color:#F60; font-weight:normal} 
+.roleArea2 { width:750px; height:49px; margin:30px auto;/* background:#ccc;*/ }
+.roleArea2  ul{width:750px; height:50px;margin:0 auto;padding-left:13px; background:url(../images/ulbg.gif) repeat-x 32px 49px;}
+.roleArea2  ul li{width:366px; height:57px;margin-right:1px; line-height:49px;float:left; background: url(../images/register.gif) no-repeat; text-indent:10em;font-size:14px; font-weight:bold}
+.roleArea2  ul li .active{color:#fff}
+.roleArea2  ul li .active:visited{color:#fff}
+.roleArea2  ul li .activeNone{color:#ff6400}
+.roleArea2  ul li .activeNone a:visited{color:#ff6400}
+.roleArea2  ul li.activeList{ background-position:0 -182px}
+.roleArea2  ul li.activeLnone{ background-position:0 -272px}
+
+.register .textInfor{ width:500px; margin:0 auto;padding:0; font-size:14px;/*background:#ccc*/}
+.register .textInfor td{ margin:0;padding:20px 0}
+.register .star{margin-right:2px}
+.register .textInfor .textInput1{  width:420px ;height:25px;border:1px solid #ff9b5a}
+.register .textInfor .textInput2{ width:345px ;height:25px;border:1px solid #ff9b5a}
+.register .textInfor .selectInput1{ width:420px ;height:25px;border:1px solid #ff9b5a}
+.register .textInfor td.lience { vertical-align:top}
+.register .textInfor td .textInput2{float:left;}
+.register .textInfor td ,visited{ margin:0 5px}
+
+.verify{ color:#09C; }
+.verify:hover{ text-decoration:underline}
+
+.register  .agree { width:340px;*width:310px; height:20px;margin:0px auto;padding:10px auto 34px 80px; line-height:20px;}
+.register  .agree .read{ margin-right:5px;float:left}
+.register  .agree .p{color:#0066ff; vertical-align:top}
+.register  .agree .agreement{color:#0066ff}
+.register  .agree .agreement:visited{color:#0066ff}
+.register  .rebtn{ width:60px;  height:31px; line-height:31px; margin:0 auto}
+.register  .rebtn .login2{ margin-top:6px;width:80px; height:31px; line-height:31px;border:none; color:#fff; font-weight:bold;float:left; background:url(../images/button/login80,47.gif) no-repeat; font-size:16px;}
+.register  .rebtn .login2:hover{ background-position:0 -43px}
+.register  .rebtn  a{color:#0066ff}
+.register  .rebtn  a:visited{color:#0066ff}
+.register  .rebtn .have{ float:left;padding:15px 0 0 6px; }
