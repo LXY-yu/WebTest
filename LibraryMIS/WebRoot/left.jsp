@@ -16,17 +16,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-
-<script type="text/javascript" src="js/script.js"></script>
-
-
-  </head>
+    <script type="text/javascript" src="js/script.js"></script>
+    </head>
   
-  <body>
+  <body id="bg">
   <%
      String rdAdminRoles=(String)request.getSession().getAttribute("rdAdminRoles");
      session.setAttribute("rdAdminRoles",rdAdminRoles);
@@ -91,6 +88,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</ul>
 		</li>
 	</ul>
+	
+	
+</body>
   
-  </body>
+  
 </html>

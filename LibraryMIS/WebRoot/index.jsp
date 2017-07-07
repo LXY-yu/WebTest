@@ -32,7 +32,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <frameset rows="20%, 80%">
   <frame name="tfr" src="top.jsp"/>
   <frame name="bfr" src="bottom.jsp"/>
-  </frameset>      
+  </frameset>
+  
   <noframes>
   <body>
   您的浏览器不支持框架， 请升级您的浏览器以便正常访问。

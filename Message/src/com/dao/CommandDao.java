@@ -3,6 +3,7 @@ package com.dao;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
@@ -39,6 +40,53 @@ public class CommandDao {
 			return commandlist;
 		}
 
+		/**
+		 * 根据查询条件查询消息列表的条数
+		 */
+		public int count(Command command) {
+			DBConn dbConn=new DBConn();
+			SqlSession sqlSession = null;
+			int result = 0;
+			try {
+				sqlSession = dbConn.getSqlSession();
+				// 通过sqlSession执行SQL语句
+				IMessage imessage = sqlSession.getMapper(IMessage.class);
+				result = imessage.count(command);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				if(sqlSession != null) {
+					sqlSession.close();
+				}
+			}
+			return result;
+		}
+		
+		/**
+		 * 根据查询条件分页查询消息列表
+		 */
+		public List<Command> queryMessageListByPage(Map<String,Object> parameter) {
+			DBConn dbConn=new DBConn();
+			List<Command> messageList = new ArrayList<Command>();
+			SqlSession sqlSession = null;
+			try {
+				sqlSession = dbConn.getSqlSession();
+				// 通过sqlSession执行SQL语句
+				IMessage imessage = sqlSession.getMapper(IMessage.class);
+				messageList = imessage.queryMessageListByPage(parameter);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				if(sqlSession != null) {
+					sqlSession.close();
+				}
+			}
+			return messageList;
+		}
+		
+		
 		/*
 		 * 依据id查找要修改的信息
 		 */

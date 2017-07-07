@@ -36,6 +36,33 @@
 		select a.ID C_ID,a.NAME,a.DISCRIPTION,b.ID,b.CONTENT,b.COMMAND_ID from COMMAND a left join COMMAND_content b on a.ID=b.COMMAND_ID and a.ID=#{_parameter}		
 	</select>
 	
+	<select id="count"  parameterType="com.bean.Command" resultType="int">
+  	select count(*) from COMMAND
+    <where>
+		<if test="name !=null and !&quot;&quot;.equals(name.trim())">
+		and a.NAME=#{name}
+		</if>
+		<if test="discription !=null and !&quot;&quot;.equals(discription.trim())">
+		and a.DISCRIPTION like '%${discription}%'
+		</if>
+		</where>
+  </select>
+  
+  <select id="queryMessageListByPage" parameterType="java.util.Map" resultMap="MessageResult">
+    select <include refid="columns"/> from COMMAND
+    <where>
+		<if test="name !=null and !&quot;&quot;.equals(name.trim())">
+		and a.NAME=#{name}
+		</if>
+		<if test="discription !=null and !&quot;&quot;.equals(discription.trim())">
+		and a.DISCRIPTION like '%${discription}%'
+		</if>
+    </where>
+    order by ID
+  </select>
+  
+  <sql id="columns">ID,NAME,DISCRIPTION</sql>
+  
 	<update id="updateCommand" parameterType="com.bean.Command">
 	update COMMAND set NAME=#{name},DISCRIPTION=#{discription} where ID=#{id}
 	</update>

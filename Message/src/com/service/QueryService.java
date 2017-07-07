@@ -1,11 +1,14 @@
 package com.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import com.bean.Command;
 import com.bean.CommandContent;
 import com.dao.CommandDao;
+import com.entity.Page;
 import com.util.Iconst;
 
 /**
@@ -19,6 +22,22 @@ public class QueryService {
 	public List<Command> queryMessageList(String command,String description) {
 		CommandDao commandDao = new CommandDao();
 		return commandDao.queryCommandList(command, description);
+	}
+	
+	/**
+	 * 根据查询条件分页查询消息列表
+	 */
+	public List<Command> queryMessageListByPage(String command,String discription,Page page) {
+		Map<String,Object> parameter = new HashMap<String, Object>();
+		// 组织消息对象
+		Command c = new Command();
+		c.setName(command);
+		c.setDiscription(discription);
+		parameter.put("command", c);
+		parameter.put("page", page);
+		CommandDao commandDao = new CommandDao();
+		// 分页查询并返回结果
+		return commandDao.queryMessageListByPage(parameter);
 	}
 	
 	/**
